@@ -65,7 +65,6 @@ public class DataFlowPipelineForMemStore {
                                     String>> out) {
 
                                 if (fields[RedisIndex.USERID.getValue()] != null) {
-                                    //out.output(KV.of("user_id:".concat(fields[RedisIndex.USERID.getValue()]), fields[RedisIndex.USERID.getValue()]));
                                     out.output(KV.of("titles:".concat(fields[RedisIndex.USERID.getValue()]), fields[RedisIndex.TITLES.getValue()]));
                                 }
                             }
